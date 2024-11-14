@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
     const elements = document.querySelectorAll(".fade-in-slide-up, .fade-in");
     elements.forEach((el, index) => {
         setTimeout(() => {
-            el.style.opacity = "1"; 
-        }, index * 150); 
+            el.style.opacity = "1";
+        }, index * 150);
     });
 });
