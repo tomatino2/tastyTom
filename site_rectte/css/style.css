@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: #f3f4f6;
+    --text-color: black;
+    --light-text-color: #ffffff;
+    --header-footer-bg: #1d2124;
+    --border-color: #d1d5db;
+    --link-color: black;
+    --hover-link-color: gray;
+
+}
+
+
+li a {
+    color: white;
+
+}
+
+.dark-theme {
+    --background-color: #121212;
+    --text-color: #e5e5e5;
+    --header-footer-bg: #1c1c1c;
+    --border-color: #444444;
+    --link-color: black;
+    --hover-link-color: gray;
+
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+.custom-nav {
+    background-color: var(--header-footer-bg); /* Fond noir */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Ombre légère */
+}
+
+.custom-nav .nav-link.active {
+    background-color: #343a40; /* Couleur différente pour l’onglet actif */
+    color: #ffffff;
+}
+
+.custom-nav .nav-link {
+    color: #ffffff; /* Texte en blanc */
+}
+h1,
+h2 {
+    color: var(--text-color);
+}
+button{
+background-color: #121212;
+
+}
+button:after{
+background-color: white;
+
+}
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+header h1{
+color: white;
+
+
+}
+a:hover {
+    color: var(--hover-link-color);
+}
+
+
+header {
+    background-color: var(--header-footer-bg);
+    border-bottom: 1px solid var(--border-color);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 20px;
+}
+
+.iconepricibale {
+    width: 100px;
+}
+
+
+.card {
+    border: none;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+#recettes-populaires {
+    width: 300px;
+    text-align: center;
+}
+
+.list-group {
+    background-color: #e2e8f0;
+
+}
+
+.list-group-item {
+    background-color: #e2e8f0;
+
+}
+
+.list-group-item a {
+    color: var(--link-color);
+}
+
+.list-group-item a:hover {
+    color: var(--hover-link-color);
+}
+
+
+footer {
+    background-color: var(--header-footer-bg);
+    color: var(--light-text-color);
+    border-top: 1px solid var(--border-color);
+    padding: 20px;
+    text-align: center;
+    
+}
+
+
+#icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 30px;
+
+}
+
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateY(15px) scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.fade-in-slide-up {
+    animation: fadeInSlideUp 1.2s ease-out forwards;
+    opacity: 0;
+
+}
+
+.fade-in {
+    animation: fadeIn 1.2s ease-out forwards;
+    opacity: 0;
+}

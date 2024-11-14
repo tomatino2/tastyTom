@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous | Tomiamiam</title>
+    <!-- Lien vers Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/chef.ico" type="image/x-icon">
+
+</head>
+
+<body> 
+    <header>
+        <a href="../index.html"><img class="iconepricibale" src="../img/chef (1).png" alt="Logo du site"></a>
+        <img src="../img/mode-sombre.png" alt="mode sombre" id="icon" class="mb-2 fade-in">
+        <h1>Contactez-nous !</h1>
+        <p>Bienvenue dans l'univers des saveurs maison !</p>
+        <input aria-label="Recherche" autocomplete="off" placeholder="Rechercher..."
+            class="form-control mb-3 w-50 mx-auto " name="query" type="text">
+            <ul class="nav nav-pills nav-fill gap-2 p-1 small rounded-5 shadow custom-nav" id="pillNav2" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a href="../index.html" class="nav-link active rounded-5 text-light" id="home-tab2"
+                        role="tab" aria-selected="true">Home</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a href="./apropos.html" class="nav-link rounded-5 text-light" id="profile-tab2" role="tab"
+                        aria-selected="false">Profile</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a href="./html/contact.html" class="nav-link rounded-5 text-light" id="contact-tab2" role="tab"
+                        aria-selected="false">Contact</a>
+                </li>
+            </ul>
+    </header>
+    <section class="contact-section container">
+        <br>
+        <p>Pour toute question, suggestion ou remarque, veuillez nous contacter en utilisant le formulaire ci-dessous :
+        </p>
+        <hr>
+        <form action="#" method="POST" class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" class="form-control" required>
+
+            <label for="email" class="mt-2">Email :</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+
+            <label for="message" class="mt-2">Message :</label>
+            <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+
+            <button type="submit" class="btn btn-primary mt-3">Envoyer</button>
+        </form>
+    </section>
+
+    <footer class="text-center py-4 fade-in">
+        <p>&copy; 2024 Tasty Tom. Tous droits réservés.</p>
+        <nav>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="../html/contact.html">Contact</a></li>
+                <li class="list-inline-item"><a href="../html/apropos.html">À propos</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
