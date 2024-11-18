@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les recettes de Tasty Tom</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style2.css">
+    <link rel="shortcut icon" href="./img/chef.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Tom Tasty</h2>
+        <ul>
+            <li class="active">Home</li>
+            <li><a href="#recettes">All Recipes</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#a-propos">About Us</a></li>
+        </ul>
+        <div class="delivery">
+            <p>Create Your Recipe</p>
+            <a href="#">Start Here</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <header class="fade-in-slide-up text-center mb-4">
+            <a href="#"><img class="iconepricibale" src="./img/chef (1).png" alt="Logo du site"></a>
+            <img src="./img/mode-sombre.png" alt="mode sombre" id="icon" class="mb-2 fade-in">
+            <h1>Bienvenue sur Tasty Tom 🍴</h1>
+            <p>Découvrez des recettes faciles et rapides pour tous les goûts !</p>
+            <input type="text" placeholder="Rechercher des recettes..." class="form-control mb-3 w-50 mx-auto">
+        </header>
+
+        <section id="categories" class="categories text-center mb-5">
+            <button class="btn btn-outline-primary">All</button>
+            <button class="btn btn-outline-primary">Desserts</button>
+            <button class="btn btn-outline-primary">Main Course</button>
+            <button class="btn btn-outline-primary">Snacks</button>
+            <button class="btn btn-outline-primary">Drinks</button>
+        </section>
+
+        <section id="recettes" class="container my-5">
+            <h2 class="text-center mb-4">Nos recettes</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <a href="recettes/recette1.html">
+                            <img src="./img/cookies.jpg" class="card-img-top" alt="Cookies au chocolat">
+                            <div class="card-body">
+                                <h5 class="card-title">Cookies au chocolat</h5>
+                                <p>Des cookies fondants et riches en chocolat noir et pépites croustillantes.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <a href="recettes/recette2.html">
+                            <img src="./img/gateaux_cafe.jpg" class="card-img-top" alt="Gâteau au café">
+                            <div class="card-body">
+                                <h5 class="card-title">Gâteau au café et aux noix</h5>
+                                <p>Un délicieux gâteau au café, rehaussé de noix croquantes.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <a href="recettes/recette3.html">
+                            <img src="./img/cuckake_peche.jpeg" class="card-img-top" alt="Cupcakes à la pêche">
+                            <div class="card-body">
+                                <h5 class="card-title">Cupcakes à la pêche</h5>
+                                <p>Des cupcakes moelleux à la pêche avec un crumble de noisettes.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <div class="discount text-center my-4">
+                <p><strong>New Recipe:</strong> Try our Chanterelle Sauce!</p>
+            </div>
+            <div class="articles">
+                <h3 class="text-center">Tips & Articles</h3>
+                <ul>
+                    <li>How to Cook Perfect Rice</li>
+                    <li>Best Baking Tips for Beginners</li>
+                    <li>5 Quick Snacks in 10 Minutes</li>
+                </ul>
+            </div>
+        </aside>
+
+        <footer class="text-center py-4">
+            <p>&copy; 2024 Tasty Tom. Tous droits réservés.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="./html/contact.html">Contact</a></li>
+                <li class="list-inline-item"><a href="./html/apropos.html">À propos</a></li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com/tomi_cunningham/" target="_blank">
+                        <img src="./img/instagram.png" alt="Instagram" style="width: 24px; height: 24px;">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
