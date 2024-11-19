@@ -1,17 +1,43 @@
-/* Style global */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
-  display: flex;
+:root {
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --light-text-color: #ffffff;
+  --header-footer-bg: #1d2124;
+  --border-color: #d1d5db;
+  --link-color: black;
+  --hover-link-color: gray;
+  --sidebar-bg: #343a40;
+  --sidebar-hover: #495057;
+  --highlight-color: #ffc107;
+  --highlight-hover: #e0a800;
+  --card-bg: #fff;
+  --card-border: #ddd;
 }
 
-/* Sidebar */
+.dark-theme {
+  --background-color: #121212;
+  --text-color: #e5e5e5;
+  --header-footer-bg: #1c1c1c;
+  --border-color: #444444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
 .sidebar {
   width: 250px;
-  background-color: #343a40;
-  color: #fff;
+  background-color: var(--sidebar-bg);
+  color: var(--light-text-color);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -39,9 +65,9 @@ body {
   transition: background-color 0.3s;
 }
 
-.sidebar ul li.active, 
+.sidebar ul li.active,
 .sidebar ul li:hover {
-  background-color: #495057;
+  background-color: var(--sidebar-hover);
 }
 
 .sidebar .delivery {
@@ -53,18 +79,17 @@ body {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #ffc107;
-  color: #343a40;
+  background-color: var(--highlight-color);
+  color: var(--sidebar-bg);
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
 }
 
 .sidebar .delivery a:hover {
-  background-color: #e0a800;
+  background-color: var(--highlight-hover);
 }
 
-/* Contenu principal */
 .main {
   margin-left: 270px;
   width: calc(100% - 270px);
@@ -80,11 +105,10 @@ header input[type="text"] {
   width: 50%;
   padding: 10px;
   margin-top: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
 }
 
-/* Catégories */
 .categories {
   text-align: center;
   margin-bottom: 20px;
@@ -96,22 +120,26 @@ header input[type="text"] {
   border-radius: 5px;
   margin: 0 5px;
   background-color: #6c757d;
-  color: #fff;
+  color: var(--light-text-color);
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .categories button:hover {
-  background-color: #495057;
+  background-color: var(--sidebar-hover);
 }
 
 .categories button:focus {
-  background-color: #ffc107;
-  color: #343a40;
+  background-color: var(--highlight-color);
+  color: var(--sidebar-bg);
   outline: none;
 }
 
-/* Recettes */
+.card-img-top {
+  object-fit: cover;
+  height: 50%;
+}
+
 .items {
   display: flex;
   flex-wrap: wrap;
@@ -119,9 +147,14 @@ header input[type="text"] {
   justify-content: center;
 }
 
+.card {
+  width: 18rem;
+  height: 25rem;
+}
+
 .item {
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 5px;
   padding: 15px;
   width: 250px;
@@ -150,28 +183,28 @@ header input[type="text"] {
   color: #6c757d;
 }
 
-/* Section Aside */
 aside {
   margin-top: 30px;
 }
 
-.discount, .articles {
+.discount,
+.articles {
   margin-bottom: 20px;
   padding: 15px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 5px;
 }
 
 .discount p {
-  color: #ffc107;
+  color: var(--highlight-color);
   font-weight: bold;
   text-align: center;
 }
 
 .articles h3 {
   margin-bottom: 10px;
-  color: #343a40;
+  color: var(--sidebar-bg);
 }
 
 .articles ul {
@@ -188,8 +221,85 @@ aside {
 
 .articles ul li::before {
   content: '•';
-  color: #ffc107;
+  color: var(--highlight-color);
   position: absolute;
   left: 0;
   font-weight: bold;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--hover-link-color);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--header-footer-bg);
+  color: var(--light-text-color);
+  border-top: 1px solid var(--border-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.iconepricibale {
+  width: 100px;
+}
+
+
+
+
+#icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  width: 30px;
+
+}
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .main {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+  }
+
+  header input[type="text"] {
+    width: 100%;
+  }
+
+  .categories button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .main {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .sidebar h2 {
+    font-size: 16px;
+  }
 }

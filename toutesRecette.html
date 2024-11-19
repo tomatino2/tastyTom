@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les recettes de Tasty Tom</title>
+    <title>Liste des recettes - Tasty Tom</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style2.css">
     <link rel="shortcut icon" href="./img/chef.ico" type="image/x-icon">
@@ -14,34 +14,31 @@
     <div class="sidebar">
         <h2>Tom Tasty</h2>
         <ul>
-            <li class="active"><a href="index.html">Accueil</a></li>
-            <li><a href="toutesRecette.html">Toutes les recettes</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li class="active"><a href="allRecipe.html">Toutes les recettes</a></li>
             <li><a href="categorie.html">Catégories</a></li>
             <li><a href="html/apropos.html">À propos</a></li>
             <li><a href="html/contact.html">Contact</a></li>
         </ul>
         <div class="delivery">
-            <p>Create Your Recipe</p>
-            <a href="creationRecette.html">Start Here</a>
+            <p>Créez votre recette</p>
+            <a href="creationRecette.html">Commencer ici</a>
         </div>
     </div>
 
     <div class="main">
-        <header class="fade-in-slide-up text-center mb-4">
+        <header class="text-center mb-4">
             <a href="index.html"><img class="iconepricibale" src="./img/chef (1).png" alt="Logo du site"></a>
-            <img src="./img/mode-sombre.png" alt="mode sombre" id="icon" class="mb-2 fade-in">
-            <h1 class="fade-in-slide-up">Bienvenue sur Tasty Tom !</h1>
-            <p class="fade-in-slide-up">Découvrez des recettes faciles et rapides pour tous les goûts !</p>
-            <input aria-label="Recherche" autocomplete="off" placeholder="Rechercher..."
-                class="form-control mb-3 w-50 mx-auto fade-in-slide-up" name="query" type="text">
+            <h1>Bienvenue sur Tasty Tom</h1>
+            <p>Explorez nos délicieuses recettes !</p>
+            <input aria-label="Recherche" autocomplete="off" placeholder="Rechercher une recette..."
+                class="form-control mb-3 w-50 mx-auto" name="query" type="text">
         </header>
 
-        
-
-        <section id="recettes" class="container my-5 ">
-            <h2 class="text-center mb-4">Nos recettes</h2>
-            <div class="row ">
-                <!-- Card 1 -->
+        <section id="recettes" class="container my-5">
+            <h2 class="text-center mb-4">Toutes nos recettes</h2>
+            <div class="row">
+                <!-- Liste des recettes -->
                 <div class="col-md-4 mb-4">
                     <div class="card shadow-lg border-0 rounded">
                         <a href="recettes/recette1.html">
@@ -54,7 +51,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- Card 2 -->
+
                 <div class="col-md-4 mb-4">
                     <div class="card shadow-lg border-0 rounded">
                         <a href="recettes/recette2.html">
@@ -66,7 +63,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- Card 3 -->
+
                 <div class="col-md-4 mb-4">
                     <div class="card shadow-lg border-0 rounded">
                         <a href="recettes/recette3.html">
@@ -79,6 +76,45 @@
                         </a>
                     </div>
                 </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg border-0 rounded">
+                        <a href="recettes/recette4.html">
+                            <img src="./img/tiramisu.jpg" class="card-img-top rounded-top" alt="Tiramisu">
+                            <div class="card-body">
+                                <h5 class="card-title">Tiramisu</h5>
+                                <p class="card-text">Un classique italien crémeux et délicieux, avec une touche de café.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg border-0 rounded">
+                        <a href="recettes/recette5.html">
+                            <img src="./img/cheesecake.jpg" class="card-img-top rounded-top" alt="Cheesecake">
+                            <div class="card-body">
+                                <h5 class="card-title">Cheesecake New Yorkais</h5>
+                                <p class="card-text">Un cheesecake riche et crémeux, parfait pour toutes les occasions.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg border-0 rounded">
+                        <a href="recettes/recette6.html">
+                            <img src="./img/muffins.jpg" class="card-img-top rounded-top" alt="Muffins aux myrtilles">
+                            <div class="card-body">
+                                <h5 class="card-title">Muffins aux myrtilles</h5>
+                                <p class="card-text">Des muffins légers et aérés avec des myrtilles fraîches.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </section>
 
